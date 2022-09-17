@@ -200,6 +200,7 @@ form > div {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-top: 20%;
 }
 .lds-dual-ring {
   display: inline-block;
@@ -213,8 +214,8 @@ form > div {
   height: 64px;
   margin: 8px;
   border-radius: 50%;
-  border: 6px solid #cef;
-  border-color: #cef transparent #cef transparent;
+  border: 6px solid #bc7a90;
+  border-color: #bc7a90 transparent #dec2cb transparent;
   animation: lds-dual-ring 1.2s linear infinite;
 }
 @keyframes lds-dual-ring {
