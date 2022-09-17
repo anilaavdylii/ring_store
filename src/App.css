@@ -9,7 +9,9 @@ body {
   margin: 0;
   padding: 0;
   color: #364147;
-  background-color: #fff;
+  background-color: rgb(255, 255, 255);
+  width: auto;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 }
 
 #root {
@@ -26,10 +28,13 @@ body {
 header {
   display: flex;
   padding-left: 20px;
+  max-height: 40px;
+  margin-top: 25px;
 }
 
 header img {
   max-height: 100px;
+  padding-left: 300px;
 }
 
 nav {
@@ -39,10 +44,10 @@ nav {
 
 footer {
   text-align: center;
-  color: gray;
+  color: #fff;;
   padding: 20px 0 20px 0;
   flex-shrink: 0;
-  background-color: gainsboro;
+  background-color: #bc7a90;
 }
 
 header ul {
@@ -67,14 +72,17 @@ header li {
 
 #products {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  padding-top: 0;
+  padding-left: 300px;
+  padding-right: 300px;
+  justify-content: space-around;
 }
 
 .product {
-  display: flex;
-  align-items: flex-end;
-  max-width: 350px;
-  text-align: center;
+  list-style: none;
+  flex: 0 0 33.333333%;
+  border-style: inherit;
 }
 
 #cart img {
@@ -106,7 +114,7 @@ main {
 }
 
 a {
-  color: #faa541;
+  color: #bc7a90;
   text-decoration: none;
 }
 
@@ -216,4 +224,10 @@ form > div {
   100% {
     transform: rotate(360deg);
   }
+}
+
+
+#filters{
+  margin-top: 50px;
+  padding-left: 70%;
 }
