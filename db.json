@@ -2,7 +2,7 @@
   "products": [
     {
       "id": 1,
-      "category": "ring",
+      "category": "rings",
       "image": "product1.png",
       "name": "Lab-Created Ruby Ring",
       "price": 249.00,
@@ -16,7 +16,7 @@
     },
     {
       "id": 2,
-      "category": "ring",
+      "category": "rings",
       "image": "product2.png",
       "name": "Natural Sapphire Ring",
       "price": 299.99,
@@ -30,7 +30,7 @@
     },
     {
       "id": 3,
-      "category": "ring",
+      "category": "rings",
       "image": "product3.png",
       "name": "Created Blue Opal Engagement Ring",
       "price": 699.90,

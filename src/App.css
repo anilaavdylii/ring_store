@@ -44,10 +44,10 @@ nav {
 
 footer {
   text-align: center;
-  color: #fff;;
+  color: rgb(153, 98, 98);;
   padding: 20px 0 20px 0;
   flex-shrink: 0;
-  background-color: #bc7a90;
+  background-color: #cebec3;
 }
 
 header ul {
