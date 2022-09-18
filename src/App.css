@@ -85,6 +85,11 @@ header li {
   border-style: inherit;
 }
 
+#cart{
+  padding-left: 300px;
+}
+
+
 #cart img {
   height: 150px;
 }
