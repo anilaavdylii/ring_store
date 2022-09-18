@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useMemo } from 'react';
 import useFetchAll from "./services/useFetchAll";
 import Spinner from "./Spinner";
 
@@ -39,10 +39,14 @@ export default function Cart({ cart, updateQuantity }) {
     );
   }
 
+  const numItemsInCart = useMemo(
+    ()=> cart.reduce((total, item)=> total+ item.quantity, 0),[cart]
+  );
+  
   if (loading) return <Spinner />;
   if (error) throw error;
 
-  const numItemsInCart = cart.reduce((total, item)=> total+ item.quantity, 0);
+  
 
   return (
     <section id="cart">
