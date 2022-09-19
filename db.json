@@ -5,12 +5,24 @@
       "category": "rings",
       "image": "product1.png",
       "name": "Lab-Created Ruby Ring",
-      "price": 249.00,
+      "price": 249,
       "skus": [
-        { "sku": "17", "size": 5.0 },
-        { "sku": "18", "size": 5.5 },
-        { "sku": "19", "size": 6.0 },
-        { "sku": "20", "size": 6.5 }
+        {
+          "sku": "17",
+          "size": 5
+        },
+        {
+          "sku": "18",
+          "size": 5.5
+        },
+        {
+          "sku": "19",
+          "size": 6
+        },
+        {
+          "sku": "20",
+          "size": 6.5
+        }
       ],
       "description": "This romantic ring for her showcases a heart-shaped lab-created ruby embraced in swirls of 14K yellow gold. A duet of round diamonds set in sterling silver lend brilliant contrast to complete the look."
     },
@@ -21,10 +33,22 @@
       "name": "Natural Sapphire Ring",
       "price": 299.99,
       "skus": [
-        { "sku": "21", "size": 5.5 },
-        { "sku": "22", "size": 6.0 },
-        { "sku": "23", "size": 6.5 },
-        { "sku": "24", "size": 7.0 }
+        {
+          "sku": "21",
+          "size": 5.5
+        },
+        {
+          "sku": "22",
+          "size": 6
+        },
+        {
+          "sku": "23",
+          "size": 6.5
+        },
+        {
+          "sku": "24",
+          "size": 7
+        }
       ],
       "description": "Crafted in 10K white gold, this lovely fine jewelry ring showcases oval and round natural sapphires framed by diamonds. "
     },
@@ -33,11 +57,20 @@
       "category": "rings",
       "image": "product3.png",
       "name": "Created Blue Opal Engagement Ring",
-      "price": 699.90,
+      "price": 699.9,
       "skus": [
-        { "sku": "31", "size": 6.0 },
-        { "sku": "32", "size": 6.6 },
-        { "sku": "33", "size": 7.0 }
+        {
+          "sku": "31",
+          "size": 6
+        },
+        {
+          "sku": "32",
+          "size": 6.6
+        },
+        {
+          "sku": "33",
+          "size": 7
+        }
       ],
       "description": "A mesmerizing oval created blue opal is embraced by gentle entwined arms embellished with brilliant round diamonds in this breathtaking women's ring."
     }
@@ -47,6 +80,36 @@
       "id": 1,
       "city": "",
       "country": ""
+    },
+    {
+      "city": "dsad",
+      "country": "United Kingdom",
+      "id": 2
+    },
+    {
+      "city": "dsa",
+      "country": "India",
+      "id": 3
+    },
+    {
+      "city": "Gjilan",
+      "country": "",
+      "id": 4
+    },
+    {
+      "city": "c",
+      "country": "",
+      "id": 5
+    },
+    {
+      "city": "fsd",
+      "country": "India",
+      "id": 6
+    },
+    {
+      "city": "ghffg",
+      "country": "",
+      "id": 7
     }
   ]
 }
