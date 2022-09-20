@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 // import { useNavigate } from "react-router-dom";
 import { saveShippingAddress } from "./services/shippingService";
 
@@ -20,6 +20,12 @@ export default function Checkout({ cart, dispatch }) {
   const [status, setStatus] = useState(STATUS.IDLE);
   const [saveError, setSaveError] = useState(null);
   const [touched, setTouched] = useState({});
+  
+  const inputCity = useRef(null);
+
+  useEffect(()=>{
+    inputCity.current.focus();
+  });
 
   // Derived state
   const errors = getErrors(address);
@@ -90,6 +96,7 @@ export default function Checkout({ cart, dispatch }) {
           <input
             id="city"
             type="text"
+            ref={inputCity}
             value={address.city}
             onBlur={handleBlur}
             onChange={handleChange}
