@@ -16,19 +16,25 @@ export default function Detail() {
   if (!product) return <PageNotFound/>
   if (error) throw error;
 
+
+  
   return (
     <div id="detail">
       <h1>{product.name}</h1>
       <p>{product.description}</p>
       <p id="price">${product.price}</p>
-      <select id="size" value={sku} onChange={(e) => {setSku(e.target.value)}}>
-              <option value="">Choose your size:</option>
-              {product.skus.map((s)=>(
-                <option key={s.sku} value={s.sku}>{s.size}</option>
-              ))}
-      </select>
+
+      {product.category === "rings" &&
+          <select id="size" value={sku} onChange={(e) => {setSku(e.target.value)}}>
+                  <option value="">Choose your size:</option>
+                  return {product.skus.map((s)=>(
+                    <option key={s.sku} value={s.sku}>{s.size}</option>
+                  ))}
+          </select>
+      }
+     
       <p>
-        <button disabled={!sku} className="btn btn-primary" onClick={()=> {
+        <button  className="btn btn-primary" onClick={()=> {
                                                               dispatch({type:"add", id, sku});
                                                               navigate("/cart");
                                                               }}>

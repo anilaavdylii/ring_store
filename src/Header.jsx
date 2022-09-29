@@ -12,10 +12,11 @@ export default function Header() {
            <h4 className="brand-name">Ring Store</h4>
           </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse className="justify-content-end">
-          <Nav className="me-auto">
-            <Nav.Link href="/rings">Rings</Nav.Link>
-            <Nav.Link href="/cart">Cart</Nav.Link>
+        <Navbar.Collapse className="justify-content-end" >
+          <Nav className="me-auto" >
+            <Nav.Link className="links" href="/rings">Rings</Nav.Link>
+            <Nav.Link className="links" href="/watches">Watches</Nav.Link>
+            <Nav.Link className="links"  href="/cart">Cart</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

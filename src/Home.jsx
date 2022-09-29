@@ -10,22 +10,25 @@ export default function Home() {
 
   return (
     <Carousel activeIndex={index} onSelect={handleSelect}>
+
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src="holder.js/800x400?text=First slide&bg=373940"
-          alt="First slide"
+          src="https://t4.ftcdn.net/jpg/04/29/39/61/360_F_429396118_tuFnY6bl2ENWzLdQWa6gp0zcQG3uQVSA.jpg"
+          alt="banner1"
         />
         <Carousel.Caption>
-          <h3>First slide label</h3>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          <h3>Evening Glam</h3>
+          <p>on styles you'll love.</p>
+          
         </Carousel.Caption>
       </Carousel.Item>
+
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src="holder.js/800x400?text=Second slide&bg=282c34"
-          alt="Second slide"
+          src="https://t4.ftcdn.net/jpg/04/25/82/11/360_F_425821130_Oh4R8ZLDwcg2YuqFwB1LlPU4qa4iCXAR.jpg"
+          alt="banner2"
         />
 
         <Carousel.Caption>
@@ -33,11 +36,12 @@ export default function Home() {
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </Carousel.Caption>
       </Carousel.Item>
+
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src="holder.js/800x400?text=Third slide&bg=20232a"
-          alt="Third slide"
+          src="https://t3.ftcdn.net/jpg/04/29/39/74/360_F_429397409_XXnAsiGy0QiuYOZLzh21RpN0o3u9MAOk.jpg"
+          alt="banner3"
         />
 
         <Carousel.Caption>

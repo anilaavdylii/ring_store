@@ -44,19 +44,22 @@ export default function Products() {
 
   return (
     <>
-          <section id="filters">
-            <label htmlFor="size">Filter by Size:</label>{" "}
-            <select id="size" value={size} onChange={(e) => {debugger; setSize(e.target.value)}}>
-              <option value="">All sizes</option>
-              <option value="5.0">5.0</option>
-              <option value="5.5">5.5</option>
-              <option value="6.0">6.0</option>
-              <option value="6.5">6.5</option>
-              <option value="7.0">7.6</option>
-              <option value="7.5">7.5</option>
-            </select>
-            { size && <h2>Found: {filteredProducts.length} items</h2>}
-          </section>
+        { category === "rings" &&
+              <section id="filters">
+              <label htmlFor="size">Filter by Size:</label>{" "}
+              <select id="size" value={size} onChange={(e) => {debugger; setSize(e.target.value)}}>
+                <option value="">All sizes</option>
+                <option value="4.0">4.0</option>
+                <option value="4.5">4.5</option>
+                <option value="5.0">5.0</option>
+                <option value="5.5">5.5</option>
+                <option value="6.0">6.0</option>
+                <option value="6.5">6.5</option>
+                <option value="7.0">7.0</option>
+                <option value="7.5">7.5</option>
+              </select>
+              { size && <h2>Found: {filteredProducts.length} items</h2>}
+            </section>    }
           <CardGroup id="products">{filteredProducts.map(renderProduct)} </CardGroup>
     </>
   );

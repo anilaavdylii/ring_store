@@ -12,10 +12,10 @@ export default function Cart() {
 
   function renderItem(itemInCart) {
     const { id, sku, quantity } = itemInCart;
-    const { price, name, image, skus } = products.find(
+    const { price, name, image} = products.find(
       (p) => p.id === parseInt(id)
     );
-    const { size } = skus.find((s) => s.sku === sku);
+  
 
     return (
       <li key={sku} className="cart-item">
@@ -23,10 +23,9 @@ export default function Cart() {
         <div>
           <h3>{name}</h3>
           <p>${price}</p>
-          <p>Size: {size}</p>
-          <p>
-            <select
-              aria-label={`Select quantity for ${name} size ${size}`}
+
+          <select
+              aria-label={`Select quantity for ${name} `}
               onChange={(e) => dispatch({type:"updateQuantity", sku, quantity: parseInt(e.target.value)})}
               value={quantity}
             >
@@ -36,8 +35,10 @@ export default function Cart() {
               <option value="3">3</option>
               <option value="4">4</option>
               <option value="5">5</option>
-            </select>
-          </p>
+          </select>
+       
+          
+
         </div>
       </li>
     );

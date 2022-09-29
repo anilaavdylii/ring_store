@@ -8,6 +8,10 @@
       "price": 249,
       "skus": [
         {
+          "sku": "16",
+          "size": 4.5
+        },
+        {
           "sku": "17",
           "size": 5
         },
@@ -99,6 +103,38 @@
         }
       ],
       "description": "This romantic ring for her showcases a heart-shaped lab-created ruby embraced in swirls of 14K yellow gold. A duet of round diamonds set in sterling silver lend brilliant contrast to complete the look."
+    },
+    {
+      "id": 5,
+      "category": "watches",
+      "image": "product5.png",
+      "name": "Silhouette Crystal Watch",
+      "price": 262.5,
+      "description": " Topped by a mineral crystal, the women's watch features an Eco-Drive movement, powered by any light, so it never needs a battery."
+    },
+    {
+      "id": 6,
+      "category": "watches",
+      "image": "product6.png",
+      "name": "Michelle Watch",
+      "price": 1595,
+      "description": "Luxurious and versatile, the Deco 16 Two-Tone women's watch from MICHELE features gold-tone plating and stainless steel on the rectangular case and bracelet. "
+    },
+    {
+      "id": 7,
+      "category": "watches",
+      "image": "product7.png",
+      "name": "Movado Bold Iconic Watch",
+      "price": 995,
+      "description": " The two-tone, ionic-plated stainless steel link bracelet secures with a push-button deployment clasp and the watch is water-resistant to 30 meters."
+    },
+    {
+      "id": 8,
+      "category": "watches",
+      "image": "product8.png",
+      "name": "Citizen Corso  Watch",
+      "price": 296.25,
+      "description": " The watch possesses features such as Eco-Drive technology, date tracking and a three-piece case construction for added dimension and detailing, elevating the watch to the next level."
     }
   ],
   "shippingAddress": [
@@ -176,6 +212,16 @@
       "city": "Gjilan",
       "country": "United Kingdom",
       "id": 15
+    },
+    {
+      "city": "jhgj",
+      "country": "China",
+      "id": 16
+    },
+    {
+      "city": "Gjilan",
+      "country": "USA",
+      "id": 17
     }
   ]
 }

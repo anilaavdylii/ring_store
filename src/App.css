@@ -26,9 +26,9 @@ body {
 }
 
 .header{
-  background-color: #f7f2f6;
+  background-color: #fff;
+  color:  #e38f9c;  
 }
-
 
 
 nav {
@@ -48,7 +48,7 @@ img.icon {width:25px; float:left; height:25px; margin: 7px; position: relative;}
 
 .brand-name{
   font-family: cursive;
-  color:  rgb(153, 98, 98);
+  color:  #e38f9c;
 }
 
 #detail img {
