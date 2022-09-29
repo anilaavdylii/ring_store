@@ -4,6 +4,7 @@ import App from "./App";
 import ErrorBoundary from "./ErrorBoundary"
 import {BrowserRouter} from "react-router-dom";
 import {CartProvider} from "./cartContext";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 ReactDOM.render(
         <ErrorBoundary>

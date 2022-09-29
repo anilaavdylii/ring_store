@@ -7,6 +7,7 @@ import {Routes, Route} from 'react-router-dom';
 import Detail from "./Detail";
 import Cart from './Cart';
 import Checkout from './Checkout';
+import Home from './Home';
 
 export default function App() {
  
@@ -16,7 +17,7 @@ export default function App() {
         <Header />
         <main>
           <Routes>
-            <Route path="/" element={<h1>Welcome to Ring Store</h1>} />
+            <Route path="/" element={<Home/>} />
             <Route path="/:category" element={<Products/>} />
             <Route path="/:category/:id" element={<Detail />} />
             <Route path="/cart" element={<Cart />} />

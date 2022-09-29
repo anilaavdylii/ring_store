@@ -56,7 +56,7 @@
       "id": 3,
       "category": "rings",
       "image": "product3.png",
-      "name": "Created Blue Opal Engagement Ring",
+      "name": "Opal Engagement Ring",
       "price": 699.9,
       "skus": [
         {
@@ -73,6 +73,32 @@
         }
       ],
       "description": "A mesmerizing oval created blue opal is embraced by gentle entwined arms embellished with brilliant round diamonds in this breathtaking women's ring."
+    },
+    {
+      "id": 4,
+      "category": "rings",
+      "image": "product1.png",
+      "name": "Lab-Created Ruby Ring",
+      "price": 249,
+      "skus": [
+        {
+          "sku": "17",
+          "size": 5
+        },
+        {
+          "sku": "18",
+          "size": 5.5
+        },
+        {
+          "sku": "19",
+          "size": 6
+        },
+        {
+          "sku": "20",
+          "size": 6.5
+        }
+      ],
+      "description": "This romantic ring for her showcases a heart-shaped lab-created ruby embraced in swirls of 14K yellow gold. A duet of round diamonds set in sterling silver lend brilliant contrast to complete the look."
     }
   ],
   "shippingAddress": [

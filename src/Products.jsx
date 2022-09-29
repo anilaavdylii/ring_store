@@ -4,6 +4,8 @@ import useFetch from "./services/useFetch";
 import {useParams} from "react-router-dom"
 import PageNotFound from "./PageNotFound";
 import {Link} from "react-router-dom"
+import Card from 'react-bootstrap/Card';
+import CardGroup from 'react-bootstrap/CardGroup';
 
 export default function Products() {
   
@@ -16,9 +18,17 @@ export default function Products() {
     return (
       <div key={p.id} className="product">
         <Link to={`/${p.category}/${p.id}`}>
-          <img src={`/images/${p.image}`} alt={p.name} />
-          <h3>{p.name}</h3>
-          <p>${p.price}</p>
+
+        <Card style={{ width: '18rem' }}>
+          <Card.Img variant="top" src={`/images/${p.image}`} alt={p.name}  />
+          <Card.Body>
+            <Card.Title>{p.name}</Card.Title>
+            <Card.Text>
+            ${p.price}
+            </Card.Text>
+          </Card.Body>
+        </Card>
+
         </Link>
       </div>
     );
@@ -47,7 +57,7 @@ export default function Products() {
             </select>
             { size && <h2>Found: {filteredProducts.length} items</h2>}
           </section>
-          <section id="products">{filteredProducts.map(renderProduct)}</section>
+          <CardGroup id="products">{filteredProducts.map(renderProduct)} </CardGroup>
     </>
   );
 }
